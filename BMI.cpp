@@ -11,11 +11,15 @@ int main() {
     
     cout << "Enter your height in cm : " << endl;
     cin >> height; //รับข้อมูลส่วนสูง
+    
+    //คำณวนค่า BMI = weight / (height)(height)
     if( weight >0 && height >0 ) {
         double heM = height / 100;
         bmi = weight / pow(heM, 2); //สูตร BMI = น้ำหนัก / (ส่วนสูง)(ส่วนสูง)
         
-        cout << "your BMI is : " << bmi << endl;
+        cout << "your BMI is : " << bmi << endl; // แจ้งค่า BMI
+    
+    // ฟังชันช์หากเขียนนอกเหนือจากตัวเลข
     }else{
         cout << "Invaild" << endl;
         return 0;
